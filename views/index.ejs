@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Mini Message Board</title>
+  </head>
+  <body>
+    <% messages.map((message) => { %>
+        <div>
+            <div class="header">
+                <%= message.user %>
+                <%= message.added %>
+            </div>
+            <div class="message">
+                <%= message.text %>
+            </div>
+
+        </div>
+    <% }) %>
+  </body>
+</html>
